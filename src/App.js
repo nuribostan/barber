@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import Services from "./pages/Services/Services"
+import AllHall from "./pages/AllHall/AllHall"
+import Contact from "./pages/Contact/Contact";
+import MainStore from "./pages/Store/MainStore";
+import Franchise from "./pages/Franchise/Franchise";
+import About from "./pages/About/About";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/hakkımızda" element={<About />} />
+          <Route exact path="/hizmetlerimiz" element={<Services />} />
+          <Route exact path="/salonlarımız" element={<AllHall />} />
+          <Route exact path="/iletişim" element={<Contact />} />
+          <Route exact path="/mağaza" element={<MainStore />} />
+          <Route exact path="/franchise" element={<Franchise />} />
+        </Routes>
     </div>
   );
 }

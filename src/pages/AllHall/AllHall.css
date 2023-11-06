@@ -1,0 +1,188 @@
+.all-hall-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.all-hall-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    gap: 30rem;
+}
+
+.all-hall-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.all-hall-title::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://resmim.net/cdn/2023/11/05/ZfVnrD.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+}
+
+.all-hall-title h1{
+    font-family: "neue", sans-serif;
+    color: #000;
+    font-size: 9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    padding: 2rem;
+}
+
+.all-hall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 100%;
+    background-color: black;
+    gap: 8rem;
+}
+
+.all-hall-search input{
+    font-family: "neue", sans-serif;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.all-hall-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}
+
+.all-hall-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-hall-card-image{
+    width: 40rem;
+    height: 40rem;
+    cursor: pointer;
+}
+
+.all-hall-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.all-hall-card-content h2 {
+    font-family: "neue", sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+}
+
+/*media query*/
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 7px;
+    }
+
+    .all-hall-title h1 {
+        font-size: 8rem;
+    }
+
+    .all-hall-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 7px;
+    }
+
+    .all-hall-title h1 {
+        font-size: 8rem;
+    }
+
+    .all-hall-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 6.5px;
+    }
+
+    .all-hall-title h1 {
+        font-size: 6rem;
+    }
+
+    .all-hall-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 6.5px;
+    }
+
+    .all-hall-title h1 {
+        font-size: 5rem;
+    }
+
+    .all-hall-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 6px;
+    }
+
+    .all-hall-title h1 {
+        font-size: 5rem;
+    }
+
+    .all-hall-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+

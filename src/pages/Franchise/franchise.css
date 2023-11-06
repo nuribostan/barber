@@ -1,0 +1,231 @@
+.franchise-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.franchise-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #000;
+    gap: 8rem;
+}
+
+.franchise-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.franchise-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://resmim.net/cdn/2023/11/06/ZWmOO3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+}
+
+.franchise-title h1 {
+    font-family: "neue", sans-serif;
+    color: #000;
+    font-size: 9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    padding: 2rem;
+}
+
+.franchise-form-title h2 {
+    font-family: "neue", sans-serif;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+    background-color: #000;
+    mix-blend-mode: difference;
+    padding: 2rem;
+
+}
+
+.franchise-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 100%;
+    gap: 12rem;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+
+.franchise-form-big-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 6rem;
+    margin-bottom: 3rem;
+}
+
+.franchise-form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.franchise-form-group label {
+    font-family: "neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #868686;
+    padding-left: 1rem;
+}
+
+.franchise-form-group input{
+    width: 50rem;
+    height: 6rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: "neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+.franchise-form-group textarea {
+    width: 98%;
+    height: 20rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: "neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+.franchise-form-group button {
+    width: 98%;
+    height: 6rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #242424;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: "neue", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 3rem;
+}
+
+/*media-query*/
+
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 8px;
+    }
+
+    .franchise-title h1{
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    html{
+        font-size: 7.5px;
+    }
+
+    .franchise-title h1{
+        font-size: 9rem;
+    }
+
+    .franchise-form-big-group {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 7.5px;
+    }
+
+    .franchise-title h1{
+        font-size: 8rem;
+    }
+
+    .franchise-form-big-group {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html{
+        font-size: 6.5px;
+    }
+
+    .franchise-title h1{
+        font-size: 7rem;
+    }
+
+    .franchise-form-big-group {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html{
+        font-size: 6px;
+    }
+
+    .franchise-title h1{
+        font-size: 7rem;
+    }
+
+    .franchise-form-big-group {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

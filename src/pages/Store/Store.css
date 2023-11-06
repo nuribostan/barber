@@ -1,0 +1,238 @@
+.main-store-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.main-store-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    background-color: #000;
+}
+
+.main-store-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-store-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: url(https://resmim.net/cdn/2023/11/05/Zfh6O1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.main-store-title h1 {
+    font-family: "neue";
+    font-size: 9rem;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 3rem 7rem;
+    mix-blend-mode: difference;
+    letter-spacing: 1px;
+}
+
+.main-store-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 100%;
+    gap: 3rem;
+    background-color: #000;
+    padding-top: 10rem;
+}
+
+.main-store-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.main-store-top h1 {
+    font-family: "neue";
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.main-store-top select {
+    font-family: "neue";
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3rem;
+}
+
+.main-store-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+    padding-bottom: 10rem;
+}
+
+.main-store-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+.main-store-item-img img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.main-store-item-title h1 {
+    font-family: "neue";
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.main-store-item-price h1 {
+    font-family: "neue";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.main-store-item-button button {
+    font-family: "neue";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: orange;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background-color: transparent;
+}
+
+/*media query*/
+
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 7.5px;
+    }
+
+    .main-store-bottom{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-store-title h1{
+        font-size: 9rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 7.5px;
+    }
+
+    .main-store-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-store-title h1{
+        font-size: 8rem;
+    }
+
+    .main-store-top {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html{
+        font-size: 6.5px;
+    }
+
+    .main-store-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-store-title h1{
+        font-size: 7rem;
+    }
+
+    .main-store-top {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html{
+        font-size: 6.5px;
+    }
+
+    .main-store-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-store-title h1{
+        font-size: 7rem;
+    }
+
+    .main-store-top {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html{
+        font-size: 6px;
+    }
+
+    .main-store-title h1{
+        font-size: 7rem;
+    }
+
+    .main-store-bottom{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-store-top {
+        flex-direction: column;
+    }
+}
